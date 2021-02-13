@@ -333,6 +333,16 @@ define Device/rakwireless_rak633
 endef
 TARGET_DEVICES += rakwireless_rak633
 
+define Device/ravpower_rp-wd008
+  IMAGE_SIZE := 7872k
+  BLOCKSIZE := 4k
+  DEVICE_VENDOR := RAVPower
+  DEVICE_MODEL := RP-WD008
+  DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
+  SUPPORTED_DEVICES += rp-wd008
+endef
+TARGET_DEVICES += ravpower_rp-wd008
+
 define Device/ravpower_rp-wd009
   IMAGE_SIZE := 14272k
   DEVICE_VENDOR := RAVPower
